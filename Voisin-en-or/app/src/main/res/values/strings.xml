@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Voisin-en-or</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="myPref">myPref</string>
+    <string name="myemail">my_email</string>
+    <string name="username">my_username</string>
+    <string name="server_adress">http://192.168.10.54:8080/</string>
+    <string name="sender_id">392830999055</string>
+    <string name="regId">my_regId</string>
+    <string name="longitude">my_longitude</string>
+    <string name="latitude">my_latitude</string>
+    <string name="cgu">En vous inscrivant, vous acceptez <font fgcolor="#ffff0000"> les conditions générales d\'utilisations </font> et prenez connaissance de notre <font fgcolor="#ffff0000">politique de confidentialité</font>.</string>
+
+    <!-- MAP -->
+    <string name="mapID">rmarcellin.c6bd2cef</string>
+    <string name="pk_accessToken">pk.eyJ1Ijoicm1hcmNlbGxpbiIsImEiOiI4SzNFNi1nIn0.JJw_vsqGSJJuh2Sx-eJCLg</string>
+    <string name="sk_accessToken">sk.eyJ1Ijoicm1hcmNlbGxpbiIsImEiOiI4OFJ0ZWFjIn0.DB_ulJOFvCZdiRjAGJvv1w</string>
+    <string name="itineraire">Itinéraire</string>
+    <string name="error_internet">Connectez vous à internet pour continuer à utiliser sur l\'aplication.</string>
+    <!-- PATH SDCARD -->
+    <string name="sdcard_path">/storage/sdcard0/VoisinsEnOr/</string>
+    <string name="sdcard_selfie">/storage/sdcard0/VoisinsEnOr/selfie.jpeg</string>
+    <!-- TEXT CLASS INSCRIPTION -->
+    <string name="inscription_error1">Veuillez remplir votre nom de famille</string>
+    <string name="inscription_error11">Veuillez remplir votre prénom</string>
+    <string name="inscription_error2">Veuillez remplir le champs mail</string>
+    <string name="inscription_error3">Veuillez remplir le champs numéro de téléphone</string>
+    <string name="inscription_error12">Veuillez remplir le champs adresse</string>
+    <string name="inscription_error4">Veuillez remplir le champs mdp</string>
+    <string name="inscription_error5">Veuillez indiquez votre sexe</string>
+    <string name="inscription_error6">Veuillez ajoutez votre date de naissance</string>
+    <string name="inscription_compte_creer">Votre compte à été créer avec succes</string>
+    <string name="inscription_mdp_invalide"> Mot de passe invalide. Le mdp doit contenir au moins une lettre minuscule, une lettre majuscule, un chiffre, et une ponctuation.</string>
+    <string name="inscription_error7">L\'adresse email est invalide.</string>
+    <string name="inscription_error8">Le numéro de téléphone est invalide</string>
+    <string name="inscription_error9">Ce pseusdo est déjà utilisé par un autre utilsateur.</string>
+    <string name="inscription_error10">Le pseudo, l\'email ou le numéro de telphone sont déjà utilisés par un autre utilisateur.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editer_error_internet_connexion">Connectez vous à internet, pour vous connectez à Voisins en Or. </string>
+
+    <!-- Actions -->
+
+    <string name="actions">Vos Actions</string>
+    <string name="actions_search">Rechercher</string>
+    <string name="actions_propose">Proposer</string>
+    <string name="actions_report_problem">SIGNALER UN PROBLEME A LA MAIRIE</string>
+
+    <!-- Track -->
+
+    <string name="time_picker_example">Time Picker Example</string>
+    <string name="time_pick">Pick the time and press save button</string>
+    <string name="time_save">Save</string>
+    <string name="time_selected"></string>
+    <string name="time_current">The Time is:</string>
+
+
+    <string name="track_details">Infos complémentaires</string>
+
+    <string name="monday">Lundi</string>
+    <string name="tuesday">Mardi</string>
+    <string name="wednesday">Mercredi</string>
+    <string name="thursday">Jeudi</string>
+    <string name="friday">Vendredi</string>
+    <string name="saturday">Samedi</string>
+    <string name="sunday">Dimanche</string>
+
+    <string name="date_repeat">Répéter?</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/item_conversation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#fff">
+
+        <com.excilys.voisinsenor.utils.MLRoundedImageView
+            android:id="@+id/activity_profil_photo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_conversation_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Mada"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+
+           />
+    </LinearLayout>
+</LinearLayout>

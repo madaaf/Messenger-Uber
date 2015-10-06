@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+    <!-- Top Bar -->
+
+    <RelativeLayout
+        android:id="@+id/header_group"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#000000">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chevronleft"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="8"
+            android:text="@string/actions"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/header_group"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Actions proposées"
+        android:background="@color/orange"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_group" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_buttons_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0.5dp">
+
+        <Button
+            android:id="@+id/activity_firstscreen_my_button_connexion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/redDark"
+            android:text="@string/actions_search"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/activity_firstscreen_my_button_inscription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/redClear"
+            android:text="@string/actions_propose"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageButton
+        android:id="@+id/activity_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:background="#000000"
+        android:src="@drawable/chevronleft" />
+
+    <TextView
+        android:id="@+id/activity_inscription_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Voisins en or"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/activity_return"/>
+
+    <RadioGroup
+        android:id="@+id/activity_inscription_radiouGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/activity_inscription_title"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/activity_inscription_rg_homme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homme"
+            android:textStyle="bold"
+            android:buttonTint="@color/white"
+            android:textColor="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/activity_inscription_rg_femme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femme"
+            android:buttonTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/activity_inscription_prenom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_inscription_radiouGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pseudo"/>
+        <EditText
+            android:id="@+id/activity_inscription_prenom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint=" Prénom"
+            android:inputType="text"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/activity_inscription_nom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_inscription_prenom_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pseudo"/>
+        <EditText
+            android:id="@+id/activity_inscription_nom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint=" Nom de Famille"
+            android:inputType="text"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_inscription_adress_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_inscription_nom_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pseudo"/>
+        <EditText
+            android:id="@+id/activity_inscription_adress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint=" Adresse"
+            android:inputType="text"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_inscription_phone_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_inscription_adress_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tel"/>
+        <EditText
+            android:id="@+id/activity_inscription_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint=" 0610101010"
+            android:inputType="phone"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_inscription_email_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_inscription_phone_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mail"/>
+        <EditText
+            android:id="@+id/activity_inscription_email"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint=" Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_inscription_mdp_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_inscription_email_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mdp"/>
+        <EditText
+            android:id="@+id/activity_inscription_mdp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint=" Mot de passe"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/activity_inscription_text_ddn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_inscription_mdp_ll"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="10dp"
+        android:text="Insérer votre date de naissance"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/activity_inscription_bouton_date_naissance"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/activity_inscription_text_ddn"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="20px"
+        android:background="@drawable/corner"
+        android:onClick="showDatePickerDialog"
+        android:text="01/01/2014" />
+
+
+    <Button
+        android:id="@+id/activity_inscription_suivant"
+        android:layout_width="300px"
+        android:layout_marginTop="40px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_red"
+        android:layout_alignParentBottom="true"
+        android:text="Suivant"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

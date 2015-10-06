@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+
+    <RelativeLayout
+        android:id="@+id/activity_chat_header_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff">
+
+
+        <TextView
+            android:id="@+id/activity_chat_myfriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Mon ami"
+            android:textColor="#000000"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_chat_sendarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/activity_chat_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:hint=" Insérez votre message"/>
+        <ImageView
+            android:id="@+id/activity_chat_sendmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/activity_chat_list_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+        android:layout_above="@id/activity_chat_sendarea"
+        android:layout_below="@id/activity_chat_header_name"/>
+
+    <View
+        android:id="@+id/activity_chat_border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/activity_chat_list_message"
+        android:background="#000000"/>
+
+
+</RelativeLayout>

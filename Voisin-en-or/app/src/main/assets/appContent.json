@@ -1,0 +1,74 @@
+{
+  "POIs": [
+    {
+      "latitude": "48.80082859610134",
+      "longitude": "2.323099116897583",
+      "name": "1",
+      "address": "404 Rue Jean Dupont, 75003 Paris",
+      "type": "Poi"
+    },
+    {
+      "latitude": "48.80582859610134",
+      "longitude": "2.333099116897583",
+      "name": "2",
+      "address": "404 Rue Jean Dupont, 75003 Paris",
+      "type": "Poi"
+    },
+    {
+      "latitude": "48.80082859610134",
+      "longitude": "2.333899116897583",
+      "name": "3",
+      "address": "404 Rue Jean Dupont, 75003 Paris",
+      "type": "Poi"
+    },
+    {
+      "latitude": "48.80382859610134",
+      "longitude": "2.321999116897583",
+      "name": "4",
+      "address": "404 Rue Jean Dupont, 75003 Paris",
+      "type": "Poi"
+    },
+    {
+      "latitude": "48.80372859610134",
+      "longitude": "2.321099116897583",
+      "name": "5",
+      "address": "404 Rue Jean Dupont, 75003 Paris",
+      "type": "Poi"
+    },
+    {
+      "latitude": "48.80352859610134",
+      "longitude": "2.320999116897583",
+      "name": "6",
+      "address": "404 Rue Jean Dupont, 75003 Paris",
+      "type": "Poi"
+    },
+    {
+      "latitude": "48.86352859610134",
+      "longitude": "2.340999116897583",
+      "name": "7",
+      "address": "404 Rue Jean Dupont, 75003 Paris",
+      "type": "Poi"
+    },
+    {
+      "latitude": "48.86652859610134",
+      "longitude": "2.350999116897583",
+      "name": "8",
+      "address": "201 Rue Saint-Denis, 75002 Paris",
+      "type": "Poi"
+    },
+    {
+      "latitude": "48.86623923394761",
+      "longitude": "2.3525118827819824",
+      "name": "9",
+      "address": "Rue Réaumur, 75003 Paris",
+      "type": "Poi"
+    },
+    {
+      "latitude": "48.86249854817404",
+      "longitude": "2.3525333404541016",
+      "name": "10",
+      "address": "75003 Paris",
+      "type": "Poi"
+    }
+  ]
+}

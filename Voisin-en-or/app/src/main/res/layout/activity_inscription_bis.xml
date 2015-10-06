@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageButton
+        android:id="@+id/activity_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chevronleft" />
+
+    <TextView
+        android:id="@+id/activity_inscription_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_return"
+        android:layout_centerHorizontal="true"
+        android:text="Voisins en or"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/activity_inscription_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:layout_below="@id/activity_inscription_title"
+        android:text="Souhaitez vous proposer des services de raccompagenent ?"
+        android:textColor="@color/white" />
+
+    <RadioGroup
+        android:id="@+id/activity_inscription_radiouGroup_driver"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_inscription_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/activity_inscription_driver_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="Oui    "
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/activity_inscription_driver_inactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="Non"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/activity_inscription_vehicule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_inscription_radiouGroup_driver">
+
+        <LinearLayout
+            android:id="@+id/activity_inscription_vehicule_brand_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="30px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mail" />
+
+            <EditText
+                android:id="@+id/activity_inscription_vehicule_brand"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:hint=" Modèle du véhicule"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_inscription_vehicule_passager_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_inscription_vehicule_brand_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="30px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mail" />
+
+            <EditText
+                android:id="@+id/activity_inscription_vehicule_passager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:hint=" Nombre de sièges"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_inscription_vehicule_matricule_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_inscription_vehicule_passager_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="30px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mail" />
+
+            <EditText
+                android:id="@+id/activity_inscription_vehicule_matricule"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:hint=" Matricule de véhicule"
+                android:inputType="text" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/activity_inscriptionbis_valider"
+        android:layout_width="300px"
+        android:layout_marginTop="40px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_red"
+        android:layout_alignParentBottom="true"
+        android:text="Valider"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/activity_inscription_cgu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cgu"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px"
+        android:gravity="center"
+        android:layout_above="@id/activity_inscriptionbis_valider"/>
+
+</RelativeLayout>

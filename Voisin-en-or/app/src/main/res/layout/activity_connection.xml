@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+
+    <TextView
+        android:id="@+id/inscriptionStadium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voisins en Or"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textSize="55dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/email_outline"/>
+        <EditText
+            android:id="@+id/activity_connection_email"
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:hint="   email"
+            android:background="@drawable/edit_text"/>
+            android:inputType="text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_connection_validate"
+        android:layout_width="fill_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px"
+        android:layout_below="@id/ly"
+        android:text="Valider"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        />
+</LinearLayout>

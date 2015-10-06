@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/map_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/activity_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:background="#000000"
+            android:src="@drawable/chevronleft" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Carte"
+            android:textColor="#ffffff"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+
+    <!-- Search bar -->
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/map_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map_header"
+        android:background="#ffffff"/>
+
+    <!-- Map -->
+
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_search"/>
+
+    <!-- Search results list -->
+
+    <ListView
+        android:id="@+id/map_results_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_search"
+        android:background="#ffffff"
+        android:visibility="gone"/>
+</RelativeLayout>

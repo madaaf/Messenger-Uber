@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voisins En or"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+        <!--android:background="#BC2F2F"-->
+        <Button
+            android:id="@+id/activity_firstscreen_my_button_connexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_dark_button"
+            android:textColor="#FFFFFF"
+            android:text="Connexion"
+            android:width="300px"
+            android:height="88px"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="40px"/>
+        <Button
+            android:id="@+id/activity_firstscreen_my_button_inscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button_red"
+            android:textColor="#FFFFFF"
+            android:text="Inscription"
+            android:width="300px"
+            android:height="88px"/>
+    </LinearLayout>
+
+</RelativeLayout>

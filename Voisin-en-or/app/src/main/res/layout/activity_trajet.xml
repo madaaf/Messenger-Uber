@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+
+    <RelativeLayout
+        android:id="@+id/header_group"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#000000">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chevronleft"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="8"
+            android:text="@string/track_details"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/btnChangeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="8:00"
+            android:textSize="65sp" />
+
+        <TextView
+            android:id="@+id/activity_trajet_date"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:onClick="showDatePickerDialog"
+            android:text="01/01/2014"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_trajet_isrepeted"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/activity_trajet_isrepeted_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Répéter"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_trajet_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/activity_trajet_week_monday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/sticky_item_text"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="L"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_trajet_week_tuesday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@color/sticky_item_text"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="M"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_trajet_week_wednesday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@color/sticky_item_text"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="M"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_trajet_week_thursday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@color/sticky_item_text"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="J"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_trajet_week_friday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@color/sticky_item_text"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="V"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_trajet_week_saturday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@color/sticky_item_text"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="S"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_trajet_week_sunday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@color/sticky_item_text"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="D"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passagers : "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/activity_trajet_passengers"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_round"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_trajet_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Description : "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/activity_trajet_desc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edit_text_round"
+            android:gravity="top"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:hint="Détails du trajet, espace dans le coffre..."
+            android:padding="3dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/activity_trajet_validate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Suivant"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/round_button_red"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
